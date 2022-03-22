@@ -1,7 +1,6 @@
-import os
-
 from requests_html import HTMLSession
 import requests
+import os
 
 barkKey = str(os.environ['BARKKEY'])
 session = HTMLSession()
