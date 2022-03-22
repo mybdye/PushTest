@@ -18,7 +18,7 @@ qty = req.html.xpath("//div[@id='product1']/header/span[@class='qty']/text()")[0
 print(product, qty)
 
 # bark 推送
-if barkKey !=' ':
+if len(barkKey) !=0 :
     barkUrl = 'https://api.day.app/'+barkKey
     if int(qty.split(' ')[0]) != 0:
         title = 'Vir 监控'
