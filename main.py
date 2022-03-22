@@ -11,9 +11,9 @@ header = {
 url = "https://billing.virmach.com/index.php?rp=/store/special-offers"
 req = session.get(url=url, headers=header)
 # 取得产品名
-product = req.html.xpath("//div[@class='product clearfix']/header/span[@id='product1-name']/text()")[0]
+product = req.html.xpath("//div[@id='product2']/header/span[@id='product2-name']/text()")[0]
 # 取得产品余量
-qty = req.html.xpath("//div[@class='product clearfix']/header/span[@class='qty']/text()")[0]
+qty = req.html.xpath("//div[@id='product2']/header/span[@class='qty']/text()")[0]
 
 if int(qty.split(' ')[0]) !=0:
     # bark 推送
