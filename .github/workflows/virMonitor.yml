@@ -1,4 +1,4 @@
-name: PushTest
+name: virMonitor
 
 # Controls when the action will run. 
 on:
